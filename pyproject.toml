@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "policy-gradient"
+version = "0.0.1"
+description = "policy gradient"
+authors = ["froggagul <froggagul@gmail.com>"]
+readme = "README.md"
+packages = [{include = "policy_gradient"}]
+
+[tool.poetry.dependencies]
+python = ">3.8,<4.0"
+gym = {extras = ["classic-control"], version = "^0.26.2"}
+torch = "1.13"
+typed-argument-parser = "^1.8.0"
+black = "^23.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
